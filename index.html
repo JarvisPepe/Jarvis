@@ -71,7 +71,7 @@
   <div class="boot-hint" id="bootHint">Tap ACTIVATE · CINEMATIC JARVIS BOOT</div>
   <div class="boot-audio-status" id="audioStatus">AUDIO CHANNEL · STANDBY</div>
   <audio id="jarvisBootAudio" preload="auto" playsinline>
-    <source src="./jarvis-cinematic-boot-v6.mp3?v=600" type="audio/mpeg">
+    <source src="./jarvis-cinematic-boot-v7.mp3?v=700" type="audio/mpeg">
   </audio>
 </div><main class="app">
 <header class="header"><div class="brand"><div class="core"><span>◉</span></div><div><h1>JARVIS</h1><small>ONLINE · V6.0</small></div></div><div class="meta"><div class="date" id="date">Freitag, 2. Oktober 2026</div><div class="loc">⌖ WILEN BEI WOLLERAU</div></div><div class="head-actions"><button class="round" onclick="showAlert()">♧<i class="badge">1</i></button><button class="round" onclick="refreshLive()">↻</button><button class="round" onclick="replayIntro()" title="Replay JARVIS Intro">◉</button></div></header>
@@ -220,7 +220,7 @@ async function fallbackWebAudio(){
     bootAudioContext=bootAudioContext||new C();
     await bootAudioContext.resume();
     if(!bootAudioBuffer){
-      const r=await fetch('./jarvis-cinematic-boot-v6.mp3?v=600',{cache:'no-store'});
+      const r=await fetch('./jarvis-cinematic-boot-v7.mp3?v=700',{cache:'no-store'});
       if(!r.ok) throw new Error('HTTP_'+r.status);
       bootAudioBuffer=await bootAudioContext.decodeAudioData(await r.arrayBuffer());
     }
