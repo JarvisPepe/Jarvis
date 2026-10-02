@@ -1,0 +1,102 @@
+{
+  "system": "JARVIS",
+  "hudVersion": "5.2",
+  "run": {
+    "mode": "LIVE_RUN",
+    "timestamp": "2026-10-02",
+    "status": "SUCCESS"
+  },
+  "location": "Wilen bei Wollerau",
+  "todayImportant": [
+    {
+      "priority": "INFO",
+      "title": "Dylan ist in den Herbstferien",
+      "action": "Kein Kindergarten heute; Ferien bis 19.10."
+    },
+    {
+      "priority": "PLAN",
+      "title": "Wetter heute beachten",
+      "action": "Ca. 12–19 °C, leichter Regen am Vormittag möglich; Regenjacke bereithalten."
+    },
+    {
+      "priority": "INFO",
+      "title": "Oktoberfest",
+      "action": "Ganztägiger Kalendereintrag."
+    }
+  ],
+  "weather": {
+    "status": "LIVE",
+    "source": "Weather Atlas",
+    "forecast": "12–19 °C, leichter Regen am Vormittag möglich, ca. 44% Niederschlagswahrscheinlichkeit"
+  },
+  "kids": [
+    {
+      "name": "Dylan",
+      "status": "HOLIDAY",
+      "detail": "Herbstferien"
+    },
+    {
+      "name": "Riley",
+      "status": "NORMAL_KITA",
+      "detail": "Freitag: ganzer Tag inkl. Mittagsbetreuung"
+    }
+  ],
+  "calendar": [
+    {
+      "title": "Oktoberfest",
+      "allDay": true
+    },
+    {
+      "title": "Herbstferien Dylan",
+      "allDay": true,
+      "until": "2026-10-17"
+    }
+  ],
+  "sports": [
+    {
+      "team": "Pittsburgh Steelers",
+      "status": "RESULT",
+      "detail": "27–24 Niederlage gegen Cleveland"
+    },
+    {
+      "team": "Ohio State",
+      "status": "UPCOMING",
+      "detail": "vs Iowa am 03.10."
+    },
+    {
+      "team": "Borussia Dortmund",
+      "status": "WATCH",
+      "detail": "Aktuelle Verletzungsmeldung zu Julian Ryerson"
+    },
+    {
+      "team": "Manchester United",
+      "status": "WATCH",
+      "detail": "Aktuelle Kader-/Transfermeldungen"
+    }
+  ],
+  "fantasy": {
+    "status": "LIVE",
+    "leagues": 2,
+    "rostersChecked": true,
+    "relevantFlags": [
+      "Zurich Warriors: Bucky Irving — Questionable",
+      "Zurich Warriors: Rico Dowdle — Out",
+      "Strip Sack Syndicate: A.J. Brown — IR",
+      "Strip Sack Syndicate: Alec Pierce — IR"
+    ]
+  },
+  "tips": {
+    "status": "PUBLIC_ONLY",
+    "personalTipStatusTracked": false
+  },
+  "alerts": [],
+  "sourceStatus": {
+    "calendar": "LIVE",
+    "weather": "LIVE",
+    "kids": "LIVE",
+    "sports": "LIVE",
+    "fantasy": "LIVE",
+    "tips": "PUBLIC_ONLY",
+    "pupil": "PENDING"
+  }
+}
