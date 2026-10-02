@@ -258,7 +258,7 @@ function runBoot(withAudio){
   setTimeout(()=>{if(b){b.classList.add('hide');setTimeout(()=>b.style.display='none',1200)}},21500);
 }
 function activateJarvis(){
-  localStorage.setItem('jarvisBootActivated','1'); localStorage.setItem('jarvisBootVersion','6.0');
+  localStorage.setItem('jarvisBootActivated','1'); localStorage.setItem('jarvisBootVersion','7.1');
   document.getElementById('activateBtn').style.display='none';
   document.getElementById('audioTestBtn').style.display='none';
   document.getElementById('bootHint').textContent='CINEMATIC BOOT · AUDIO STARTING';
@@ -269,7 +269,7 @@ function activateJarvis(){
 }
 function initBoot(){
   initAudioDiagnostics();
-  const first=!localStorage.getItem('jarvisBootActivated') || localStorage.getItem('jarvisBootVersion')!=='6.0';
+  const first=!localStorage.getItem('jarvisBootActivated') || localStorage.getItem('jarvisBootVersion')!=='7.1';
   if(!first){
     document.getElementById('activateBtn').style.display='none';
     document.getElementById('audioTestBtn').style.display='inline-block';

@@ -1,4 +1,4 @@
-const CACHE='jarvis-v6.0';
+const CACHE='jarvis-v7.1';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.svg','./icon-512.svg','./jarvis-cinematic-boot-v7.mp3'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('jarvis-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
